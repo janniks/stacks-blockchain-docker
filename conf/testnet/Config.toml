@@ -2,7 +2,7 @@
 working_dir = "/root/stacks-blockchain/data"
 rpc_bind = "0.0.0.0:20443"
 p2p_bind = "0.0.0.0:20444"
-bootstrap_node = "047435c194e9b01b3d7f7a2802d6684a3af68d05bbf4ec8f17021980d777691f1d51651f7f1d566532c804da506c117bbf79ad62eea81213ba58f8808b4d9504ad@testnet.stacks.co:20444"
+bootstrap_node = "027e929237cc4c12980b109bd3180ca591f3b72896b6e3716f5d1dce0a5bdd2dc4@next.stacks.org:20444"
 
 [burnchain]
 chain = "bitcoin"
@@ -12,11 +12,29 @@ username = "stacks"
 password = "foundation"
 rpc_port = 18332
 peer_port = 18333
+magic_bytes = "21"
+pox_2_activation = 2406590
 
 [[events_observer]]
 endpoint = "stacks-blockchain-api:3700"
 retry_count = 255
 events_keys = ["*"]
+
+[[burnchain.epochs]]
+epoch_name = "1.0"
+start_height = 0
+
+[[burnchain.epochs]]
+epoch_name = "2.0"
+start_height = 2000000
+
+[[burnchain.epochs]]
+epoch_name = "2.05"
+start_height = 2104380
+
+[[burnchain.epochs]]
+epoch_name = "2.1"
+start_height = 2406000
 
 [[ustx_balance]]
 address = "ST2QKZ4FKHAH1NQKYKYAYZPY440FEPK7GZ1R5HBP2"
