@@ -2,7 +2,7 @@
 working_dir = "/root/stacks-blockchain/data"
 rpc_bind = "0.0.0.0:20443"
 p2p_bind = "0.0.0.0:20444"
-bootstrap_node = "027e929237cc4c12980b109bd3180ca591f3b72896b6e3716f5d1dce0a5bdd2dc4@next.stacks.org:20444"
+bootstrap_node = "027e929237cc4c12980b109bd3180ca591f3b72896b6e3716f5d1dce0a5bdd2dc4@next.stacks.org:20444,02ff5e37c488b517a61976b2392b6f5e93f303c4c5393a73e83eba03b3e4d12d00@2-1-seed.testnet.hiro.so:20444"
 
 [burnchain]
 chain = "bitcoin"
